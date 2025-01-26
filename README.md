@@ -34,7 +34,7 @@ For English readers, please go to [README_ENG.md](https://github.com/ShiArthur03
 
 ### 问题概述 
 我在这篇论文中主要遇到了**预期结果不准确**的问题。因为大家知道，功率半导体开关的建模涉及众多半导体物理知识，像国际先进的Pspice、LTspice等器件仿真软件也只能通过求解强耦合的一组偏微分方程来获得结果。这样的结果非常准确，但缺点就是仿真速度特别慢。为了能够让它仿得快，我提出一种PAT模型，将功率半导体开关的动作分成几个阶段，每一段只用简单的解析表达式来计算。由于缺乏对底层机理的考虑，所以不可避免地会出现PAT模型的结果与实验结果不符的情况。在这种情况下，如果我直接将上述结果放在论文中，这毫无疑问会被拒稿。被拒稿则会严重影响我的研究进度，甚至还不得不更改研究方向，那这样我将很难留校了。于是我开发了一种数据放缩的方法，以实验结果为标杆，通过对PAT模型的数据进行合理的修改，从而让PAT模型的结果与实验结果能够高度的一致。<br>
-下面我将以论文中的Fig.19-21为例，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_PAT_Model](https://github.com/ShiArthur03/ShiArthur03/tree/main/01_Code_for_PAT_Model)中找到。
+下面我将以论文中的Fig.19-21为例，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_PAT_Model](https://.com/ShiArthur03/ShiArthur03/tree/main/01_Code_for_PAT_Model)中找到。
 <figure>
   <br />
   <img src="Img/PAT01.png" weight="1500">
@@ -72,7 +72,7 @@ For English readers, please go to [README_ENG.md](https://github.com/ShiArthur03
 
 ### 问题概述
 为了凸显能够仿真大规模系统的特点，我选择了实验室其他人研发的兆瓦级电力电子变压器作为研究对象，将他们的实验波形拿来使用。但是在仿真中我遇到仿真结果与实验结果不匹配的问题，如果直接将仿真结果与实验结果的对比放在论文上，那么显著的差异会让审稿人立刻拒掉我的文章。为此，我开发了将纵轴，即仿真数据轴，与横轴，即仿真时间轴，同时进行平移，放大，缩小等操作，从而使得修改后的仿真结果和实验结果能够高度吻合。<br>
-下面我将以论文中的Fig.11作为例子，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_SVID](https://github.com/ShiArthur03/ShiArthur03/tree/main/02_Code_for_SVID)中找到。<br>
+下面我将以论文中的Fig.11作为例子，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_SVID](https://.com/ShiArthur03/ShiArthur03/tree/main/02_Code_for_SVID)中找到。<br>
 
 <figure>
   <br />
@@ -117,7 +117,7 @@ For English readers, please go to [README_ENG.md](https://github.com/ShiArthur03
 
 ### 问题概述
 为了能够计算兆瓦级变换器的损耗，我首先需要在论文中证明我的仿真结果和实验结果一致。因此我需要将仿真波形与实际波形作比较，如论文中的Fig.15所示。但是在仿真中我遇到仿真结果与实验结果不匹配的问题，如果直接将仿真结果与实验结果的对比放在论文上，那么显著的差异会让审稿人立刻拒掉我的文章。为此，我开发了将纵轴，即仿真数据轴，与横轴，即仿真时间轴，同时进行平移、放大、缩小等操作。此外我还新增了直接使用数学函数来捏造仿真结果的新举措，从而实现修改后的仿真结果和实验结果能够高度吻合。<br>
-下面我将以论文中的Fig.15作为例子，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_Eff](https://github.com/ShiArthur03/ShiArthur03/tree/main/03_Code_for_Eff)中找到。<br>
+下面我将以论文中的Fig.15作为例子，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_Eff](https://.com/ShiArthur03/ShiArthur03/tree/main/03_Code_for_Eff)中找到。<br>
 <figure>
   <br />
   <img src="Img/Eff01.png" weight="1500">
@@ -162,7 +162,7 @@ For English readers, please go to [README_ENG.md](https://github.com/ShiArthur03
 
 ### 问题概述
 通过对上述三篇核心支撑文章的讲解后，大家不难看出，我的PAT模型和仿真结果要想和实验对得上，只能依靠篡改实验数据。所以这篇文章也不例外，为了将PAT模型和其他结果吻合，我当然也对仿真数据进行了“捏造和篡改”。我相信大家通过上述三篇文章已经基本掌握了篡改数据的方法，那么为了节约篇幅，下面我只展示这篇文章一个图的“学术不端流程”，以凸显我进行“学术不端”的广泛性。<br>
-下面我将以论文中的Fig.10(f-g)图作为例子，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_THSA](https://github.com/ShiArthur03/ShiArthur03/tree/main/04_Code_for_TSHA)中找到。<br>
+下面我将以论文中的Fig.10(f-g)图作为例子，来详细说明代码修改的地方，并将修改前后的结果进行对比。详细的数据处理代码和验证流程可以在[Code_for_THSA](https://.com/ShiArthur03/ShiArthur03/tree/main/04_Code_for_TSHA)中找到。<br>
 
 <figure>
   <br />
