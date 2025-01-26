@@ -402,3 +402,9 @@ pdf：[链接](https://github.com/ShiArthur03/ShiArthur03/blob/main/%E6%B8%85%E5
 平常可能还会有凡夫俗子注意到你超凡入圣的行为。他们坚守廉价的学术道德底线，又对于自己不能超脱耿耿于怀，转而嫉恨你难以比拟的才华。那你就可以把他们当成备用的牺牲品。当你面临毫无根据的指控时，完全可以联合上下，挑选出平时最看不顺眼的几只当作替罪羔羊。让牛马去承担更多牛马的怒火，神只负责高高在上，光芒万丈。
 
 
+# Credit
+
+最原始投稿在这 后被移除 https://github.com/ShiArthur03/ShiArthur03
+
+最近从 https://github.com/ShiArthurX/ShiArthurX 备份而来
+
